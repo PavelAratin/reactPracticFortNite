@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reactPracticFortNite/static/css/main.c7daf034.css",
+    "main.js": "/reactPracticFortNite/static/js/main.6e685fd1.js",
+    "index.html": "/reactPracticFortNite/index.html",
+    "main.c7daf034.css.map": "/reactPracticFortNite/static/css/main.c7daf034.css.map",
+    "main.6e685fd1.js.map": "/reactPracticFortNite/static/js/main.6e685fd1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7daf034.css",
+    "static/js/main.6e685fd1.js"
+  ]
+}
