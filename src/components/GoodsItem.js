@@ -1,4 +1,7 @@
-const GoodsItem = ({ full_background, name, description, price, addToBasket,id,removeFromBasket }) => {
+import { useContext } from "react";
+import { ShopContext } from "../context";
+const GoodsItem = ({ full_background, name, description, price, id}) => {
+  const { addToBasket } = useContext(ShopContext)
   return (
     <div className="card" id={id}>
       <div className="card-image">
@@ -10,7 +13,7 @@ const GoodsItem = ({ full_background, name, description, price, addToBasket,id,r
       </div>
       <div className="card-action">
         <button
-          onClick={() => addToBasket({id, name, price})}
+          onClick={() => addToBasket({ id, name, price })}
           className="btn"
         >Купить</button>
         <span className="right" style={{ fontSize: '1.8rem' }}>{price}руб</span>

@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { useContext } from "react";
+import { ShopContext } from "../context";
 
-const Alert = ({ name, closeAlert }) => {
+const Alert = () => {
+  const { alertName: name = '', closeAlert } = useContext(ShopContext);
   //всплывающая подсказка
   //пример применения функции очистки
   useEffect(() => {
